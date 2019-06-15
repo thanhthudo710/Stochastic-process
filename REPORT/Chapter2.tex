@@ -1,0 +1,103 @@
+\chapter{Background}
+In this chapter, we will discuss the definitions
+of these two fundamental processes and  build up to the Poisson process. Discussion of the Poisson process is necessary as one can view the Hawkes process as a generalisation of the (time-) inhomogeneous Poisson process. Note that only definitions for
+the one-dimensional case are given, though many of these processes have a natural extension to higher dimensions.
+\section{Counting and point processes}
+Since Hawkes process is a special type of counting process, we will define what a counting process is. We will discuss the properties and types of counting processes, which will lead into the definition of Hawkes process.
+
+\begin{Definition}[{\cite[pp.2]{Hawkess}}(Counting process)]
+	A counting process is a stochastic process $(N(t):t \geq 0)$ taking values in
+	$N_{0}$ that satisfies $N_{0} = 0$, is finite, and is a right-continuous step function
+	with jumps of size +1. Say that $(H(u) : u \geq 0)$ is the history of the arrivals
+	up to time u.
+\end{Definition}
+
+A counting process can be viewed as a cumulative count of the number of ‘arrivals’ into a system up to the current time. Another way to characterise such a
+process is to consider the sequence of random arrival times $T = \{T_{1}, T_{2}, . . .\}$ at which
+the counting process $N(.)$ has jumped. The process defined as these arrival times is
+called a point process, described in Definition \ref{Def Point process} (adapted from Carstensen 2010); see Fig. \ref{PointAndCountingProcess} for an example point process and its associated counting process.
+
+  \begin{figure}[H]
+  	\centering
+  	\includegraphics{PointProcessAndCountingProcess.PNG}
+  	\caption{An example point process realisation $\{t_{1}, t_{2}, . . . \}$ and corresponding counting process $N(t)$.}
+  	\label{PointAndCountingProcess}
+  \end{figure}
+
+To be able to fully understand what a counting process is, a point process must be defined. In this section, we introduce the fundamentals of point process. These serve as the foundation on which we build, in later sections, the more complex processes, such as the Hawkes process.
+
+\begin{Definition}[{\cite[pp.10-11]{Hawkess}}(Point process)]{}	
+If a sequence of random variables $T = {T_{1}, T_{2}, . . . }$, taking values in $R^{+} \cup {\infty}$, has: $P(0 < T_{0} \leq T_{1} \leq T_{2} \leq . . . ) = 1, P(T_{i} < T_{i+1}, T_{i} < \infty) = P(T_{i} < \infty) $ for $i \geq 1 $, and the number of points in a bounded region is finite almost surely (a.s.), then T is a (simple) point process.
+\label{Def Point process}
+\end{Definition}
+
+The simplest class of point process is the Poisson process. In Poisson process, events arrive randomly with the constant intensity $\lambda$. This initial model is sufficient for describing simple processes, say the arrival of cars on a street over a short period of time. However, we need to able to vary the event intensity with time in order to describe more complex processes, such as simulating the arrivals of cars during rush hours and off-peak times. In a non-homogeneous Poisson process, the rate of event arrivals is a function of time, i.e. $\lambda = \lambda(t)$
+
+\section{Non-homogeneous Poisson processes}
+\begin{Definition}[{\cite[pp.10-11]{Hawkess}}(Non-homogeneous process)]{}	
+Say a process $(N(t): t\geq 0)$ is a counting process and that it satisfies $ \forall s <t $ that $N(t)-N(s)$ is independent of $N(s)$ and that		
+	\begin{align*}
+	P(N(t + h) - N(t) = m \rvert N(t)) = 
+	\begin{cases*}
+	\lambda(t)h & $m = 1$ \\
+	o(h) & $m > 1$  \\
+	1-\lambda(t)h + o(h) & $ m = 0$  
+	\end{cases*}  
+	\end{align*}
+then $N(t)$ is called a non-homogeneous Poisson process with $\lambda$ : $ R^{+} \rightarrow R^{+} $ called the intensity function; though if $\lambda(t) = \lambda $ for all $t \geq 0$, $N(t)$ is a homogeneous Poisson process.
+\end{Definition}
+However, a non-homogeneous Poisson process is only governed by an intensity function. One way to characterize a particular point process is to specify the distribution function of the next arrival time conditional on the past. The conditional intensity function is a convenient and intuitive way of specifying how the present depends on the past in an evolutionary point process.
+\section{Conditional intensity functions}
+\begin{Definition}[{\cite[pp.10-11]{Hawkess}}(Conditional intensity function)]{}	
+Consider a counting process $N(.)$ with associated histories $H(.)$. If a function $\lambda^{*}(t)$ exists such that
+ $$\lambda^{*}(t)= \lim_{h \to 0} \dfrac{E[N(t + h)-N(t) |H(t)]}{h}$$
+that only relies on information of $N(.)$ in the past, then it is called the
+conditional intensity function of $N(.)$.
+\end{Definition}
+
+
+%\section{Algorithm}
+%Hawkes process generation is a similar problem to inhomogeneous Poisson process generation. The standard way to generate a inhomogeneous Poisson process which is driven by intensity function $\lambda(.)$ is via thinning as in Algorithm \ref{Alg:Thinning}.
+%\begin{breakablealgorithm}
+%	\caption{Generate an inhomogeneous Poisson process by thinning}
+%	\label{Alg:Thinning}
+%	\begin{algorithmic}[H] \item
+%		\begin{tabbing}
+%			INPUT:  \=
+%			\\
+%			\> $T$: the sequence of random arrival times.
+%			\\
+%			\>$\lambda(.)$: the intensity function.
+%			\\
+%			\> $M$: the upper bounded. 
+%			\\
+%			OUTPUT: 
+%			\\
+%			\> $P$: .
+%			\\
+%			1. \= procedure PoissonByThinning $(T,\lambda(.), M)$
+%			\\
+%			2. \hspace{0.5cm} require: $\lambda(.) \leq M $ on $[0, T]$
+%			\\
+%			3. \hspace{0.5cm} $P \leftarrow [], t \leftarrow 0.$
+%			\\
+%			4. \hspace{0.5cm} while $t < T$ do
+%			\\
+%			5. \hspace{1cm}  $E \leftarrow Exp(M)$
+%			\\
+%			6. \hspace{1cm}  $U \leftarrow Unif(0,M)$
+%			\\
+%			7. \hspace{1cm}  if $ t < T$ and $U \leq \lambda(t) $then
+%			\\
+%			8. \hspace{1.5cm}  $P \leftarrow [P, t]$
+%			\\
+%			9. \hspace{1cm} end if
+%			\\
+%			10. \hspace{0.5cm} end while
+%			\\
+%			11. \hspace{0.5cm} return P
+%			\\
+%			12.\hspace{0.2cm}\= end procedure
+%		\end{tabbing}
+%	\end{algorithmic}
+%\end{breakablealgorithm}

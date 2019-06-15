@@ -1,0 +1,369 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{mathtools,tikz-cd}
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[english]{babel}
+\usepackage[left=3.50cm, right=2.00cm, top=3.00cm, bottom=3.50cm]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\footnotesize}{\fontsize{13pt}{1}\selectfont}
+%\usepackage[margin=1in]{geometry}  % set the margins to 1in on all sides
+\usepackage{graphicx}              % to include figures
+\usepackage{amsmath}               % great math stuff
+\usepackage{amsfonts}              % for blackboard bold, etc
+\usepackage{amsthm}                % better theorem environments
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mathtools,etoolbox}
+\usepackage{mathrsfs}
+\usepackage{relsize}%
+\usepackage{makecell}
+\usepackage{tabularx,colortbl}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{float}
+\usepackage{cases}
+\usepackage{tabto}
+\usepackage{longtable}
+\usepackage[english]{babel}
+\usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage[caption = false]{subfig}
+\usepackage[driverfallback=hypertex]{hyperref}
+\usepackage[nottoc]{tocbibind}
+\usepackage{pbox}
+\usepackage{makecell}
+\usepackage{tcolorbox}
+\usepackage{url}
+\usepackage{tikz}
+\tikzset{point/.style={circle,draw=black,inner sep=0pt,minimum size=3pt}}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{quotes,arrows.meta}
+\usetikzlibrary{shapes,arrows,arrows,positioning,fit}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+\floatstyle{ruled} 
+\newfloat{Algorithm}{htbp}{loa} 
+\floatname{Algorithm}{Algorithm}
+\urlstyle{same}
+\allowdisplaybreaks
+\usepackage{multirow}
+\usepackage[titletoc]{appendix}
+\usepackage{relsize}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\hspace{0pt}}p{#1}}
+%-----------------------EQUATION------------------------------------------------%
+\usepackage{chngcntr}
+\counterwithout{equation}{chapter} % cho công thức toán học
+
+%-----------------------EXAMPLE------------------------------------------------%
+
+\usepackage{lmodern}
+\usepackage{amssymb,amsthm}
+\newcounter{example}
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+	\noindent \textbf{Example~\theexample #1} \rmfamily}{\medskip}
+
+%------------------------SOLUTION---------------------------------------------------------%
+
+\newenvironment{solution}
+{\let\oldqedsymbol=\qedsymbol
+	\renewcommand{\qedsymbol}{$\blacksquare$}
+	\begin{proof}[\bfseries\upshape Solution]}
+	{\end{proof}
+	\renewcommand{\qedsymbol}{\oldqedsymbol}}
+
+
+%---------------------------------------------------------------------------------%%
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	urlcolor=black,
+}
+
+%-------------------------- CODE MATLAB ------------------------------------------------------%
+\usepackage{listings}
+\usepackage{color} % tô màu cho code	
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+	language=Matlab,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+	}
+%---------------------------REFERENCES-----------------------------------------------------%	
+\usepackage[backend = bibtex, sorting = nty , style = ieee]{biblatex}
+\addbibresource{mybibtex.bib}
+
+%---------------------------NUMBER PAGES-----------------------------------------------------%
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\chead{\thepage}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[C]{\thepage}
+%\fancypagestyle{plain}{%
+%	\renewcommand{\headrulewidth}{0pt}%
+%	\fancyhf{}%
+%	\fancyhead[C]{\thepage}%
+%}
+%\renewcommand{\headrulewidth}{0pt}%
+
+%------------------------ALGORITHM----------------------------------------------------
+\allowdisplaybreaks	
+\usepackage{textcomp}
+\usepackage{algorithm,algpseudocode,float}
+\usepackage{lipsum}
+\makeatletter
+\newenvironment{breakablealgorithm}
+{% \begin{breakablealgorithm}
+	\begin{center}
+		\refstepcounter{algorithm}% New algorithm
+		\hrule height.8pt depth0pt \kern2pt% \@fs@pre for \@fs@ruled
+		\renewcommand{\caption}[2][\relax]{% Make a new \caption
+			{\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+			\ifx\relax##1\relax % #1 is \relax
+			\addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+			\else % #1 is not \relax
+			\addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+			\fi
+			\kern2pt\hrule\kern2pt
+		}
+	}{% \end{breakablealgorithm}
+	\kern2pt\hrule\relax% \@fs@post for \@fs@ruled
+\end{center}
+}
+\makeatother
+
+%---------------------------PICTURE----------------------------------------------------%
+
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage[detect-all]{siunitx}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\tikzset{
+	ragged border/.style={ decoration={random steps, segment length=1mm, amplitude=0.5mm},
+		decorate,
+	}
+}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\usepackage{tikz}
+
+%---------------------------MYBOX----------------------------------------------------%
+
+\newmdenv[linecolor=black,skipabove=\topsep,skipbelow=\topsep,
+leftmargin=-3pt,rightmargin=-3pt,
+innerleftmargin=3pt,innerrightmargin=3pt]{mybox}
+
+%----------------------------CREATE THEOREM--------------------------------------------------------%
+\newtheorem{Theorem}{Theorem}[section]
+%\newcounter{Theorem} \setcounter{Theorem}{0}
+%\renewcommand{\theTheorem}{\arabic{Theorem}}
+%\newenvironment{Theorem}[2][]{%
+%	\refstepcounter{Theorem}%
+%	\ifstrempty{#1}%
+%	{\mdfsetup{%
+%			frametitle={%
+%				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+%				\node[anchor=east,rectangle,fill=blue!20]
+%				{\strut Theorem~\theTheorem};}}
+%	}%
+%	{\mdfsetup{%
+%			frametitle={%
+%%				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+%%				\node[anchor=east,rectangle,fill=blue!20]
+%				{\strut Theorem~\theTheorem~#1};}}%
+%	}%
+%	\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+%		linewidth=2pt,topline=true,%
+%		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+%	}
+%	\begin{mdframed}[]\relax%
+%		\label{#2}}{\end{mdframed}}
+
+%----------------------------CREATE DEFINITION----------------------------------------%
+
+\newtheorem{Definition}{Definition}[section]
+%\newcounter{Definition} \setcounter{Definition}{0}
+%\renewcommand{\theDefinition}{\arabic{Definition}}
+%\newenvironment{Definition}[2][]{%
+%	\refstepcounter{Definition}%
+%	\ifstrempty{#1}%
+%	{\mdfsetup{%
+%			frametitle={%
+%				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+%				\node[anchor=east,rectangle,fill=blue!20]
+%				{\strut Definition~\theDefinition};}}
+%	}%
+%	{\mdfsetup{%
+%			frametitle={%
+%				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+%				\node[anchor=east,rectangle,fill=blue!20]
+%				{\strut Definition~\theDefinition~#1};}}%
+%	}%
+%	\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+%		linewidth=2pt,topline=true,%
+%		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+%	}
+%%	\begin{mdframed}[]{}\relax%
+%		\label{#2}}{\end{mdframed}}
+
+%----------------------------CREATE LEMMA------------------------------------------%
+
+\newcounter{Lemma} \setcounter{Lemma}{0}
+\renewcommand{\theLemma}{\arabic{Lemma}}
+\newenvironment{Lemma}[2][]{%
+	\refstepcounter{Lemma}%
+	\ifstrempty{#1}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20]
+				{\strut Lemma~\theLemma};}}
+	}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20]
+				{\strut Lemma~\theLemma~#1};}}%
+	}%
+	\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+		linewidth=2pt,topline=true,%
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+	}
+	\begin{mdframed}[]\relax%
+		\label{#2}}{\end{mdframed}}
+%----------------------------CREATE LEMMA------------------------------------------%
+
+\newcounter{Proposition} \setcounter{Proposition}{0}
+\renewcommand{\theProposition}{\arabic{Proposition}}
+\newenvironment{Proposition}[2][]{%
+	\refstepcounter{Proposition}%
+	\ifstrempty{#1}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20]
+				{\strut Proposition~\theProposition};}}
+	}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20]
+				{\strut Proposition~\theProposition~#1};}}%
+	}%
+	\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+		linewidth=2pt,topline=true,%
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+	}
+	\begin{mdframed}[]\relax%
+		\label{#2}}{\end{mdframed}}
+%----------------------------CREATE PROOF------------------------------------------%
+\newtheorem{Proof}{Proof}
+
+%\newcounter{Proof} \setcounter{Proof}{0}
+%\renewcommand{\theProof}{}
+%\newenvironment{Proof}[2][]{%
+%	\refstepcounter{Proof}%
+%	\ifstrempty{#1}%
+%	{\mdfsetup{%
+%			frametitle={%
+%				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+%				\node[anchor=east,rectangle,fill=white]
+%				{\strut Proof~\theProof};}}
+%	}%
+%	{\mdfsetup{%
+%%			frametitle={%
+%				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+%%				\node[anchor=east,rectangle,fill=white]
+%				{\strut Proof~\theProof:~#1};}}%
+%%	}%
+%	\mdfsetup{innertopmargin=10pt,linecolor=white,%
+%		linewidth=2pt,topline=true,%
+%		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+%	}
+%	\begin{mdframed}[]\relax%
+%		\label{#2}}{\qed\end{mdframed}}
+
+
+\begin{document}   
+
+    \fancyhf{}
+    \lhead{}
+    \chead{}
+    \rhead{}
+    \cfoot{\thepage}
+    \rfoot{}
+    \lfoot{}
+    \pagestyle{fancy}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+%--------------------------------------------------------------------------------%
+
+    \include{Coverpage} 
+	\tableofcontents 
+%	\thispagestyle{empty}
+	\listoftables
+%	\thispagestyle{empty}
+	\listoffigures
+%%	\thispagestyle{empty}
+    \listofalgorithms
+%    \thispagestyle{empty}
+    
+	%--------------------------------------------------------------------------------%
+    \newpage
+	\include{Introduction}
+	
+%	\thispagestyle{empty}
+	
+	\newpage
+	\include{Chapter2} 
+ 
+	\newpage
+	\include{Chapter3}  
+	
+	\newpage
+	\include{Chapter4}  
+	
+%    \newpage
+%    \include{Chapter5} 
+	
+    \newpage	
+	\include{Conclusion}
+	
+	\newpage
+	\include{Appendices}
+	
+	
+    %--------------------------------------------------------------------------------%
+	\renewcommand{\bibname}{References}
+	\addcontentsline{toc}{chapter}{References}
+	\printbibliography
+	
+\end{document}
+
+
