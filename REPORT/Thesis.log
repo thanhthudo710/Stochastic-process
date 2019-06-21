@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.20)  15 JUN 2019 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.20)  22 JUN 2019 00:06
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -2540,7 +2540,7 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 11.
 
-<TDT_logo.pdf, id=117, 845.0471pt x 597.51233pt>
+<TDT_logo.pdf, id=113, 845.0471pt x 597.51233pt>
 File: TDT_logo.pdf Graphic file (type pdf)
  <use TDT_logo.pdf>
 Package pdftex.def Info: TDT_logo.pdf used on input line 11.
@@ -2562,18 +2562,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-) [4] (Thesis.toc [5
-
-
-])
+) [4] (Thesis.toc)
 \tf@toc=\write9
 \openout9 = `Thesis.toc'.
 
- [6] (Thesis.lot)
-\tf@lot=\write10
-\openout10 = `Thesis.lot'.
+ [5
 
- [7
 
 ] (Thesis.lof
 Overfull \hbox (13.4829pt too wide) in paragraph at lines 6--6
@@ -2583,23 +2577,35 @@ nd cor-re-spond-ing count-ing
  []
 
 )
-\tf@lof=\write11
-\openout11 = `Thesis.lof'.
+\tf@lof=\write10
+\openout10 = `Thesis.lof'.
 
- [8
+ [6
 
 ] (Thesis.loa)
-\tf@loa=\write12
-\openout12 = `Thesis.loa'.
+\tf@loa=\write11
+\openout11 = `Thesis.loa'.
 
- [9
+ [7
 
 ]
 \openout2 = `Introduction.aux'.
 
  (Introduction.tex
 Chapter 1.
-) [10
+)
+Overfull \hbox (8.86957pt too wide) in paragraph at lines 2--339
+\OT1/lmr/m/n/12 Hawkes pro-cess is a par-tic-u-larly in-ter-est-ing class of st
+ochas-tic pro-cess that was in-tro-duced
+ []
+
+
+Overfull \hbox (22.12839pt too wide) in paragraph at lines 2--339
+\OT1/lmr/m/n/12 Chapter 2 in-tro-duces the def-i-ni-tions of the count-ing pro-
+cess, point pro-cess, non-ho-mo-ge-neous
+ []
+
+[8
 
 
 ]
@@ -2607,91 +2613,97 @@ Chapter 1.
 
  (Chapter2.tex
 Chapter 2.
-<PointProcessAndCountingProcess.PNG, id=217, 275.52937pt x 252.945pt>
+<PointProcessAndCountingProcess.PNG, id=208, 275.52937pt x 252.945pt>
 File: PointProcessAndCountingProcess.PNG Graphic file (type png)
 
 <use PointProcessAndCountingProcess.PNG>
 Package pdftex.def Info: PointProcessAndCountingProcess.PNG used on input line 
-22.
+21.
 (pdftex.def)             Requested size: 275.52869pt x 252.94438pt.
- [11
+ [9
 
 
 
-] [12 <./PointProcessAndCountingProcess.PNG>]
-Overfull \hbox (2.4348pt too wide) in paragraph at lines 49--50
-\OT1/lmr/m/n/12 func-tion. One way to char-ac-ter-ize a par-tic-u-lar point pro
--cess is to spec-ify the dis-tri-bu-tion
+] [10 <./PointProcessAndCountingProcess.PNG>]
+Overfull \hbox (1.84749pt too wide) in paragraph at lines 48--49
+\OT1/lmr/m/n/12 func-tion. One way to char-ac-terise a par-tic-u-lar point pro-
+cess is to spec-ify the dis-tri-bu-tion
  []
 
-) [13]
+) [11]
 \openout2 = `Chapter3.aux'.
 
  (Chapter3.tex
 Chapter 3.
-[14
+[12
 
 
 
-] [15]
+]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 55.
- <Hawkess_Thinning.pdf, id=261, 614.295pt x 794.97pt>
+ [13] <Hawkess_Thinning.pdf, id=252, 614.295pt x 794.97pt>
 File: Hawkess_Thinning.pdf Graphic file (type pdf)
 
 <use Hawkess_Thinning.pdf>
 Package pdftex.def Info: Hawkess_Thinning.pdf used on input line 108.
 (pdftex.def)             Requested size: 441.01773pt x 252.39365pt.
- [16]
-<Immigrate_Birth.PNG, id=267, 471.26062pt x 121.20282pt>
+ [14]
+<Immigrate_Birth.PNG, id=260, 471.26062pt x 121.20282pt>
 File: Immigrate_Birth.PNG Graphic file (type png)
 
 <use Immigrate_Birth.PNG>
-Package pdftex.def Info: Immigrate_Birth.PNG used on input line 121.
+Package pdftex.def Info: Immigrate_Birth.PNG used on input line 123.
 (pdftex.def)             Requested size: 352.81552pt x 90.74098pt.
 
-Overfull \hbox (1.23645pt too wide) in paragraph at lines 117--126
+Overfull \hbox (1.23645pt too wide) in paragraph at lines 119--128
 \OT1/lmr/m/n/12 Imagine count-ing the pop-u-la-tion in a coun-try where peo-ple
  ar-rive ei-ther via im-mi-gra-tion
  []
 
-[17 <./Hawkess_Thinning.pdf> <./Immigrate_Birth.PNG>] [18]
-<Hawkess_ClusterFamily.pdf, id=298, 614.295pt x 794.97pt>
+[15 <./Hawkess_Thinning.pdf>] [16 <./Immigrate_Birth.PNG>]
+<Hawkess_ClusterFamily.pdf, id=291, 614.295pt x 794.97pt>
 File: Hawkess_ClusterFamily.pdf Graphic file (type pdf)
 
 <use Hawkess_ClusterFamily.pdf>
-Package pdftex.def Info: Hawkess_ClusterFamily.pdf used on input line 187.
+Package pdftex.def Info: Hawkess_ClusterFamily.pdf used on input line 188.
 (pdftex.def)             Requested size: 441.01773pt x 252.39365pt.
 
-<Hawkess_ClusterIntensity.pdf, id=300, 614.295pt x 794.97pt>
+<Hawkess_ClusterIntensity.pdf, id=294, 614.295pt x 794.97pt>
 File: Hawkess_ClusterIntensity.pdf Graphic file (type pdf)
 
 <use Hawkess_ClusterIntensity.pdf>
-Package pdftex.def Info: Hawkess_ClusterIntensity.pdf used on input line 194.
+Package pdftex.def Info: Hawkess_ClusterIntensity.pdf used on input line 197.
 (pdftex.def)             Requested size: 441.01773pt x 252.39365pt.
-) [19 <./Hawkess_ClusterFamily.pdf>] [20 <./Hawkess_ClusterIntensity.pdf>]
+ [17 <./Hawkess_ClusterFamily.pdf>]) [18 <./Hawkess_ClusterIntensity.pdf>]
 \openout2 = `Chapter4.aux'.
 
  (Chapter4.tex
 Chapter 4.
-<Application_Seismic.PNG, id=339, 672.26157pt x 351.56343pt>
+
+Overfull \hbox (14.22377pt too wide) in paragraph at lines 4--5
+\OT1/lmr/m/n/12 Hawkes in-tro-duced some prob-a-bil-ity mod-els to pre-dict the
+ oc-cur-rence of large earth-quakes.
+ []
+
+<Application_Seismic.PNG, id=333, 672.26157pt x 351.56343pt>
 File: Application_Seismic.PNG Graphic file (type png)
 
 <use Application_Seismic.PNG>
-Package pdftex.def Info: Application_Seismic.PNG used on input line 16.
+Package pdftex.def Info: Application_Seismic.PNG used on input line 15.
 (pdftex.def)             Requested size: 352.81552pt x 184.50919pt.
- [21
+ [19
 
 
 
 ]
-<SurplusProcess.PNG, id=345, 408.02437pt x 188.95593pt>
+<SurplusProcess.PNG, id=342, 408.02437pt x 188.95593pt>
 File: SurplusProcess.PNG Graphic file (type png)
 
 <use SurplusProcess.PNG>
-Package pdftex.def Info: SurplusProcess.PNG used on input line 31.
+Package pdftex.def Info: SurplusProcess.PNG used on input line 30.
 (pdftex.def)             Requested size: 352.81552pt x 163.3956pt.
- [22 <./Application_Seismic.PNG>]) [23 <./SurplusProcess.PNG>]
+ [20 <./Application_Seismic.PNG>]) [21 <./SurplusProcess.PNG>]
 \openout2 = `Conclusion.aux'.
 
  (Conclusion.tex
@@ -2699,7 +2711,7 @@ Chapter 5.
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 2.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [24
+)) [22
 
 
 
@@ -2707,7 +2719,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \openout2 = `Appendices.aux'.
 
  (Appendices.tex)
-[25
+[23
 
 
 
@@ -2720,22 +2732,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 367.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 367.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A3DB3D9DCBE42D07FFA1FAC691316D00;1438.
+(rerunfilecheck)             Checksum: D8257966CC1BAE9CD17C9B283CA10C5B;1385.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54151 strings out of 493333
- 1219509 string characters out of 3139194
- 1672432 words of memory out of 3000000
- 56676 multiletter control sequences out of 15000+200000
+ 54150 strings out of 493333
+ 1219697 string characters out of 3139194
+ 1672651 words of memory out of 3000000
+ 56679 multiletter control sequences out of 15000+200000
  61175 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,15n,96p,10427b,2275s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 67i,15n,96p,10427b,2200s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/
-enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/
+enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
@@ -2744,11 +2756,10 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri1
 2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (25 pages, 383663 bytes).
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Thesis.pdf (23 pages, 381323 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 

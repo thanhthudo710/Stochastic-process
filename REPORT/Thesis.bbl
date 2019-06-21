@@ -17,6 +17,47 @@
 \endgroup
 
 \sortlist[entry]{nty/global/}
+  \entry{SurplusProcess}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AIM}{%
+         family={Andrulyte},
+         familyi={A\bibinitperiod},
+         given={I.\bibnamedelima M.},
+         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Bernackaite},
+         familyi={B\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kievinaite},
+         familyi={K\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Siaulys},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Vilnius University}%
+    }
+    \strng{namehash}{AIMBEKD+1}
+    \strng{fullhash}{AIMBEKDSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{A Lundberg-type inequality for an inhomogeneousrenewal risk
+  model}
+    \field{year}{2015}
+  \endentry
+
   \entry{Hawkess}{article}{}
     \name{author}{3}{}{%
       {{hash=LPJ}{%
@@ -49,6 +90,28 @@
     \field{sortinithash}{L}
     \field{title}{Hawkes Processes}
     \field{year}{2015}
+  \endentry
+
+  \entry{HawkesProcesses_KatarzynaObral}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OK}{%
+         family={Obral},
+         familyi={O\bibinitperiod},
+         given={Katarzyna},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University Minnesota}%
+    }
+    \strng{namehash}{OK1}
+    \strng{fullhash}{OK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Simulation, Estimation and Applications of Hawkes Processes}
+    \field{year}{2016}
   \endentry
 \endsortlist
 \endinput

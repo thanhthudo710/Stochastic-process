@@ -1,25 +1,24 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {english}
-\contentsline {chapter}{List of Tables}{7}{chapter*.2}
-\contentsline {chapter}{List of Figures}{8}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}
-\contentsline {chapter}{\numberline {2}Background}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Counting and point processes}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Non-homogeneous Poisson processes}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Conditional intensity functions}{13}{section.2.3}
-\contentsline {chapter}{\numberline {3}Hawkes Process}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}Hawkes process definition}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}Intensity-based Hawkes Process Model}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Hawkes conditional intensity function}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Algorithm}{15}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Example}{16}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Cluster-based Hawkes Process Model}{17}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Immigration\IeC {\textendash }birth representation}{17}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Algorithm}{18}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Example}{19}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Applications}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Seismic Events}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2} Risk Process with Hawkes Process}{22}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusion}{24}{chapter.5}
-\contentsline {chapter}{References}{25}{chapter.5}
+\contentsline {chapter}{List of Figures}{6}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}
+\contentsline {chapter}{\numberline {2}Background}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Counting and point processes}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Non-homogeneous Poisson processes}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}Conditional intensity functions}{11}{section.2.3}
+\contentsline {chapter}{\numberline {3}Hawkes Process}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hawkes process definition}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Intensity-based Hawkes Process Model}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Hawkes conditional intensity function}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Algorithm}{13}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Example}{14}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Cluster-based Hawkes Process Model}{15}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Immigration\IeC {\textendash }birth representation}{15}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Algorithm}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Example}{17}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Applications}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Seismic Events}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Risk Process with Hawkes Process}{20}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusion}{22}{chapter.5}
+\contentsline {chapter}{References}{23}{chapter.5}
